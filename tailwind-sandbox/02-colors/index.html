@@ -1,32 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Colors</title>
-  </head>
-  <body>
-    <!-- Default colors -->
-    <!-- white, black, red, green, blue, orange, yellow, purple, lime, emerald, teal, cyan, indigo, violet, fuchsia, pink, rose, sky, gray, slate, zinc, neutral, stone, amber,  -->
 
-    <!-- Text Colors -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Colors</title>
+</head>
 
-    <!-- Background Colors -->
+<body>
+  <!-- Default colors -->
+  <!-- white, black, red, green, blue, orange, yellow, purple, lime, emerald, teal, cyan, indigo, violet, fuchsia, pink, rose, sky, gray, slate, zinc, neutral, stone, amber,  -->
 
-    <!-- Text Underline -->
+  <!-- Text Colors -->
+  <h1 class="text-black underline">Text Colors:</h1>
+  <p class="text-black">Tailwind is awesome! <i>(text-black)</i></p>
+  <p class="text-white">Tailwind is awesome! <i class="text-black">(text-white)</i></p>
+  <p class="text-red-500">Tailwind is awesome! <i>(text-red-500)</i></p>
+  <p class="text-green-500">Tailwind is awesome! <i>(text-green-500)</i></p>
+  <p class="text-emerald-500">Tailwind is awesome! <i>(text-emerald-500)</i></p>
+  <p class="text-zinc-500">Tailwind is awesome! <i>(text-zinc-500)</i></p>
+  <p class="text-slate-500">Tailwind is awesome! <i>(text-slate-500)</i></p>
 
-    <!-- Border Colors -->
+  <!-- Background Colors -->
+  <h1 class="text-black underline mt-6">Background Colors:</h1>
+  <p class="bg-black text-white">Tailwind is awesome! <i>(bg-black)</i></p>
+  <p class="bg-slate-800 text-yellow-300">Tailwind is awesome! <i>(bg-slate-800)</i></p>
+  <p class="bg-emerald-400">Tailwind is awesome! <i>(bg-emerald-400)</i></p>
+  <p class="bg-yellow-300">Tailwind is awesome! <i>(bg-yellow-300)</i></p>
+  <p class="bg-indigo-800 text-white">Tailwind is awesome! <i>(bg-indigo-800)</i></p>
 
-    <!-- Divide Colors -->
+  <!-- Text Underline -->
+  <h1 class="text-black underline mt-6">Text Underline and Colors:</h1>
+  <p class="underline decoration-red-500">Tailwind is awesome! <i>(underline decoration-red-500)</i></p>
+  <p class="underline decoration-yellow-800">Tailwind is awesome! <i>(underline decoration-yellow-800)</i></p>
 
-    <!-- Outline Colors -->
+  <!-- Border Colors -->
+  <h1 class="text-black underline mt-6">Border Colors:</h1>
+  <input class="border border-blue-400" type="text" value="border border-blue-400" readonly />
+  <input class="border border-green-400" type="text" value="border border-green-400" readonly />
+  <input class="border border-orange-400" type="text" value="border border-orange-400" readonly />
 
-    <!-- Box Shadow Colors (Opacity defaults to 100, but you can set it)-->
+  <!-- Divide Colors -->
+  <h1 class="text-black underline mt-6">Divide Colors:</h1>
+  <div class="divide-y divide-blue-300">
+    <i>(divide-blue-300)</i>
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+    <div>Item 4</div>
+    <div>Item 5</div>
+  </div>
 
-    <!-- Accent Colors -->
+  <!-- Outline Colors -->
+  <h1 class="text-black underline mt-6">Outline Colors:</h1>
+  <button class="outline outline-red-500">outline outline-red-500</button>
+  <button class="outline outline-blue-200">outline outline-blue-200</button>
 
-    <!-- Arbitrary Colors -->
-  </body>
+
+  <!-- Box Shadow Colors (Opacity defaults to 100, but you can set it)-->
+  <h1 class="text-black underline mt-6">Box Shadow Colors:</h1>
+  <button class="shadow-lg bg-indigo-800 shadow-indigo-800/60">shadow-lg shadow-indigo-800/60</button>
+
+
+  <!-- Accent Colors -->
+  <h1 class="text-black underline mt-6">Accent Colors:</h1>
+  <div>
+    <label for=""><i>accent-cyan-500</i></label>
+    <input type="checkbox" class="accent-cyan-500" checked>
+  </div>
+  <div>
+    <label for=""><i>accent-purple-500</i></label>
+    <input type="checkbox" class="accent-purple-500" checked>
+  </div>
+
+  <!-- Arbitrary Colors -->
+  <h1 class="text-black underline mt-6">Arbitrary Colors:</h1>
+  <div class="bg-[#427fab] text-white"><i>bg-[#427fab]</i></div>
+
+  <div class="mt-6">
+    <small class="uppercase text-xs">Notes:
+      <ul>
+        <li>Black and white don't have shades</li>
+        <li>Shades for other colors range from 50-900</li>
+        <li><i class="normal-case">inputs</i> must have class of <i class="normal-case">border</i></li>
+        <li><i class="normal-case">buttons</i> must have class of outline</li>
+        <li>Elements with a shadow must have default class of <i class="normal-case">shadow-[size]</i></li>
+        <li>Opacity of shadowed elements can be set after the shadow color
+          <i class="normal-case">shadow-[color]-[shade-number]/[opacity]</i>
+        </li>
+        <li>When using a hex color in the arbitrary color class, you can add a 4th pair which will give you opacity: <i
+            class="normal-case">bg-[#33669966]</i>
+        </li>
+        <li>you can define variables for colors in a style tag (or external CSS file that you import) and you can use
+          those variables: <i class="normal-case">bg-[var(--mycolor)]</i></li>
+      </ul>
+    </small>
+  </div>
+
+</body>
+
 </html>
