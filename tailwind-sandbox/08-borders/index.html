@@ -1,19 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Borders</title>
-  </head>
-  <body>
+
+<head>
+  <link rel="stylesheet" href="../main.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Borders</title>
+</head>
+
+<body class="bg-slate-50">
+  <div class="container mx-auto my-3 p-10 rounded-2xl shadow bg-white">
+    <h1 class="text-slate-500">Tailwind CSS from Scratch: Borders</h1>
+
     <!-- Border Width & Colors -->
+    <div class="mt-4">
+      <h2 class="text-xl font-medium">Border Width & Colors</h2>
+      <div class="w-96 m-3 p-5 border">
+        <i>border</i>
+      </div>
+      <div class="w-96 m-3 p-5 border-2">
+        <i>border-2</i>
+      </div>
+      <div class="w-96 m-3 p-5 border-4">
+        <i>border-4</i>
+      </div>
+      <div class="w-96 m-3 p-5 border-8">
+        <i>border-8</i>
+      </div>
+      <div class="w-96 m-3 p-5 border-4 border-red-500">
+        <i>border-4 border-red-500</i>
+      </div>
+      <div class="w-96 m-3 p-5 border-x-4">
+        <i>border-x-4</i>
+      </div>
+      <div class="w-96 m-3 p-5 border-y-4">
+        <i>border-y-4</i>
+      </div>
+      <div class="w-96 m-3 p-5 border-t-4">
+        <i>border-t-4</i>
+      </div>
+      <div class="w-96 m-3 p-5 border-b-4">
+        <i>border-b-4</i>
+      </div>
+      <div class="w-96 m-3 p-5 border-r-4">
+        <i>border-r-4</i>
+      </div>
+      <div class="w-96 m-3 p-5 border-l-4">
+        <i>border-l-4</i>
+      </div>
+    </div>
 
     <!-- Border Radius -->
+    <div class="mt-10">
+      <h2 class="text-xl font-medium">Border Radius</h2>
+      <div class="w-96 m-3 p-5 border-4 rounded">
+        <i>border-4 rounded</i>
+      </div>
+      <div class="w-96 m-3 p-5 border-4 rounded-lg">
+        <i>border-4 rounded-lg</i>
+      </div>
+      <div class="w-96 m-3 p-5 border-4 rounded-xl">
+        <i>border-4 rounded-xl</i>
+      </div>
+      <div class="w-96 m-3 p-5 border-4 rounded-2xl">
+        <i>border-4 rounded-2xl</i>
+      </div>
+      <div class="w-96 m-3 p-5 border-4 rounded-full">
+        <i>border-4 rounded-full</i>
+      </div>
+      <div class="w-96 m-3 p-5 border-4 rounded-t-2xl">
+        <i>border-4 rounded-t-2xl</i>
+      </div>
+      <div class="w-96 m-3 p-5 border-4 rounded-b-2xl">
+        <i>border-4 rounded-b-2xl</i>
+      </div>
+      <div class="w-96 m-3 p-5 border-4 rounded-tl-2xl">
+        <i>border-4 rounded-tl-2xl</i>
+      </div>
+      <div class="w-96 m-3 p-5 border-4 rounded-br-2xl">
+        <i>border-4 rounded-br-2xl</i>
+      </div>
+    </div>
 
     <!-- Outline -->
-  </body>
+    <div class="mt-10">
+      <h2 class="text-xl font-medium">Outline</h2>
+      <button class="outline outline-1 block my-2"><i>outline outline-1</i></button>
+      <button class="outline outline-2 my-2 outline-red-500 block"><i>outline outline-2 outline-red-500</i></button>
+      <button class="outline outline-2 outline-offset-2 block"><i>outline outline-2 outline-offset-2</i></button>
+    </div>
+
+  </div>
+</body>
+
 </html>
 
 <!-- Border Widths
