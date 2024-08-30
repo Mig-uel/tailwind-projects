@@ -1,37 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>TailwindCSS</title>
-  </head>
-  <body>
-    <!-- Positioning -->
 
-    <!-- Top left corner -->
+<head>
+  <link rel="stylesheet" href="../main.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>TailwindCSS</title>
+</head>
 
-    <!-- Top right corner -->
+<body>
+  <!-- Positioning -->
+  <h2 class="text-xl">Positioning</h2>
+  <div class="relative w-1/2 h-12 bg-red-200">
+    <div class="absolute bottom-0 right-0 bg-red-500">
+      <p><i>absolute bottom-0 right-0</i></p>
+    </div>
+  </div>
 
-    <!-- Bottom left corner -->
+  <!-- Top left corner -->
+  <div class="relative h-32 w-32 bg-indigo-500">
+    <div class="absolute left-0 top-0 h-16 w-16 bg-yellow-400">
+      <p class="text-xs"><i>absolute left-0 top-0</i></p>
+    </div>
+  </div>
 
-    <!-- Bottom right corner -->
+  <!-- Top right corner -->
+  <div class="relative h-32 w-32 bg-pink-500">
+    <div class="absolute right-0 top-0 h-16 w-16 bg-yellow-400">
+      <p class="text-xs"><i>absolute right-0 top-0</i></p>
+    </div>
+  </div>
 
-    <!-- Span top edge -->
+  <!-- Bottom left corner -->
+  <div class="relative h-32 w-32 bg-green-500">
+    <div class="absolute left-0 bottom-0 h-16 w-16 bg-yellow-400">
+      <p class="text-xs"><i>absolute left-0 bottom-0</i></p>
+    </div>
+  </div>
 
-    <!-- Span left edge -->
+  <!-- Bottom right corner -->
+  <div class="relative h-32 w-32 bg-orange-500">
+    <div class="absolute right-0 bottom-0 h-16 w-16 bg-yellow-400">
+      <p class="text-xs"><i>absolute right-0 bottom-0</i></p>
+    </div>
+  </div>
 
-    <!-- Span right edge -->
+  <!-- Span top edge -->
+  <div class="relative h-32 w-32 bg-gray-500">
+    <div class="absolute inset-x-0 top-0 h-16 bg-indigo-500">
+      <p class="text-xs"><i>absolute inset-x-0 top-0</i></p>
+    </div>
+  </div>
 
-    <!-- Span bottom edge -->
+  <!-- Span left edge -->
+  <div class="relative h-32 w-32 bg-blue-500">
+    <div class="absolute inset-y-0 left-0 w-16 bg-yellow-500">
+      <p class="text-xs"><i>absolute inset-y-0 left-0</i></p>
+    </div>
+  </div>
 
-    <!-- Display Classes -->
+  <!-- Span right edge -->
+  <div class="relative h-32 w-32 bg-blue-500">
+    <div class="absolute inset-y-0 right-0 w-16 bg-yellow-500">
+      <p class="text-xs"><i>absolute inset-y-0 right-0</i></p>
+    </div>
+  </div>
 
-    <!-- Z-Index -->
+  <!-- Span bottom edge -->
+  <div class="relative h-32 w-32 bg-red-500">
+    <div class="absolute inset-x-0 bottom-0 h-16 bg-yellow-500">
+      <p class="text-xs"><i>absolute inset-x-0 bottom-0</i></p>
+    </div>
+  </div>
 
-    <!-- Floats -->
-  </body>
+  <!-- Display Classes -->
+  <div class="mt-10">
+    <h2 class="text-xl">Display Classes</h2>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur necessitatibus, ipsum aspernatur eveniet,
+      <span class="inline bg-yellow-500">This is <i>inline</i>.</span>
+      non inventore hic obcaecati, quia ab commodi asperiores autem expedita vero! Ipsam placeat dignissimos sint
+      quidem,
+      <span class="inline-block bg-yellow-500">This is <i>inline-block</i>.</span>
+      maiores natus consectetur <span class="block bg-yellow-500">This is <i>block</i>.</span> vitae officiis hic
+      ducimus quaerat <span class="hidden bg-yellow-500">This is <i>hidden</i>.</span> quas, at
+      veniam molestiae ratione eaque veritatis
+      minima error rem. Reiciendis debitis eligendi modi vitae eos aliquam, dolores officia sed a commodi odit?
+    </div>
+  </div>
+
+  <!-- Z-Index -->
+  <div class="mt-10">
+    <h2 class="text-xl">Z-Index</h2>
+    <div class="relative h-36">
+      <div class="absolute w-24 h-24 left-10 bg-blue-100 z-40"><i>z-40</i></div>
+      <div class="absolute w-24 h-24 left-20 bg-blue-200">2</div>
+      <div class="absolute w-24 h-24 left-40 bg-blue-300 z-10"><i>z-10</i></div>
+      <div class="absolute w-24 h-24 left-60 bg-blue-400 z-20"><i>z-20</i></div>
+      <div class="absolute w-24 h-24 left-80 bg-blue-500 z-30">z-30</div>
+    </div>
+  </div>
+
+  <!-- Floats -->
+  <h2 class="text-xl mt-10">Floats</h2>
+  <div class="w-1/2">
+    <img class="h-48 w-48 float-right m-4" src="../assets/img/img1.jpg" alt="">
+    <p><i>float-right</i></p>
+  </div>
+</body>
+
 </html>
 
 <!-- Position Classes
