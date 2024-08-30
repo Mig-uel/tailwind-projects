@@ -1,37 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Container & Spacing</title>
-  </head>
-  <body>
-    <!-- Container -->
-    <div>
-      <article>
-        <h3>Article One</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Exercitationem laboriosam libero molestiae recusandae accusantium
-          voluptates? Expedita dignissimos amet eveniet dolore nobis odio a
-          sunt, maiores quasi. Modi amet quos dolores!
-        </p>
-      </article>
 
-      <!-- Margin -->
+<head>
+  <link rel="stylesheet" href="../main.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Container & Spacing</title>
+</head>
 
-      <!-- Padding -->
+<body>
+  <!-- Container -->
+  <div class="container mx-auto">
+    <h2 class="text-xl">Container</h2>
+    <div class="bg-slate-100"><i>container (adds breakpoints) mx-auto (margin: 0 auto;)</i></div>
 
-      <!-- Space Between X -->
+    <article>
+      <h3>Article One</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Exercitationem laboriosam libero molestiae recusandae accusantium
+        voluptates? Expedita dignissimos amet eveniet dolore nobis odio a
+        sunt, maiores quasi. Modi amet quos dolores!
+      </p>
+    </article>
 
-      <!-- Space Between Y -->
+    <!-- Margin -->
+    <div class="mt-10">
+      <h2 class="text-xl">Margin</h2>
+      <div class="bg-slate-100 m-2"><i>m-2 (margin: 0.5rem;)</i></div>
+      <div class="bg-slate-100 ml-4"><i>ml-4 (margin-left: 1rem;)</i></div>
+      <div class="bg-slate-100 mr-4"><i>mr-4 (margin-right: 1rem;)</i></div>
+      <div class="bg-slate-100 mt-4"><i>mt-4 (margin-top: 1rem;)</i></div>
+      <div class="bg-slate-100 mb-4"><i>mb-4 (margin-bottom: 1rem;)</i></div>
+      <div class="bg-slate-100 mt-[20px]"><i>mt-[20px] (margin-top: 20px;)</i></div>
     </div>
-  </body>
+
+    <!-- Padding -->
+    <div class="mt-10">
+      <h2 class="text-xl">Padding</h2>
+      <div class="bg-slate-100 pl-4"><i>pl-4 (padding-left: 1rem;)</i></div>
+      <div class="bg-slate-100 p-2"><i>p-2 (padding: 0.5rem;)</i></div>
+      <div class="bg-slate-100 pr-4"><i>pr-4 (padding-right: 1rem;)</i></div>
+      <div class="bg-slate-100 pt-4"><i>pt-4 (padding-top: 1rem;)</i></div>
+      <div class="bg-slate-100 pb-4"><i>pb-4 (padding-bottom: 1rem;)</i></div>
+      <div class="bg-slate-100 pt-[20px]"><i>pt-[20px] (padding-top: 20px;)</i></div>
+    </div>
+
+    <!-- Space Between X -->
+    <div class="mt-10">
+      <h2 class="text-xl">Space Between X</h2>
+      <div class="flex space-x-10">
+        <div class="bg-slate-100">Item 1</div>
+        <div class="bg-slate-100">Item 2</div>
+        <div class="bg-slate-100">Item 3</div>
+        <div class="bg-slate-100">Item 4</div>
+        <div class="bg-slate-100">Item 5</div>
+        <div class="bg-slate-100">Item 6</div>
+        <div class="bg-slate-100">Item 7</div>
+      </div>
+      <div class="bg-slate-100">
+        <i>space-x-10 (margin-left: 2.5rem;)</i>
+      </div>
+    </div>
+
+    <!-- Space Between Y -->
+    <div class="mt-10">
+      <h2 class="text-xl">Space Between Y</h2>
+      <div class="flex flex-col space-y-4">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+        <div>Item 7</div>
+      </div>
+      <div class="bg-slate-100">
+        <i>space-y-4 (margin-top: 1rem;)</i>
+      </div>
+    </div>
+
+  </div>
+</body>
+
 </html>
 
-<!-- Breakpoinsts for Container 
+<!-- Breakpoints for Container 
     container	None	width: 100%;
     sm (640px)	    max-width: 640px;
     md (768px)	    max-width: 768px;
