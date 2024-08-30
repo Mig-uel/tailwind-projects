@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Breakpoints & Media Queries</title>
-  </head>
-  <!-- Tailwind is mobile-first -->
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Breakpoints & Media Queries</title>
+</head>
+<!-- Tailwind is mobile-first -->
+
+<body class="bg-slate-50 sm:bg-green-800 md:bg-blue-800 lg:bg-yellow-800 xl:bg-indigo-500 2xl:bg-red-500">
+  <div class="container mx-auto my-3 p-10 rounded-2xl shadow bg-white">
+    <h1 class="text-slate-500">Tailwind CSS from Scratch: Breakpoints</h1>
+
+    <div class="mt-4">
+      <h2 class="text-xl font-medium">Breakpoints</h2>
+      <div>
+        <h3>Window Width: <span id="width"></span></h3>
+        <button class="block bg-black text-white rounded-xl py-3 px-4 mt-4">
+          <i>sm:bg-green-800</i>
+        </button>
+        <button class="block bg-black text-white rounded-xl py-3 px-4 mt-4">
+          <i>md:bg-blue-800</i>
+        </button>
+        <button class="block bg-black text-white rounded-xl py-3 px-4 mt-4">
+          <i>lg:bg-yellow-800</i>
+        </button>
+        <button class="block bg-black text-white rounded-xl py-3 px-4 mt-4">
+          <i>xl:bg-indigo-500</i>
+        </button>
+        <button class="block bg-black text-white rounded-xl py-3 px-4 mt-4">
+          <i>2xl:bg-red-500</i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showBrowserWidth() {
+      const width = window.innerWidth;
+      const span = document.querySelector('#width')
+
+      span.innerText = `${width}px`
+    }
+
+    window.onload = showBrowserWidth
+    window.addEventListener('resize', showBrowserWidth)
+  </script>
+</body>
+
 </html>
 
 <!-- Breakpoint Classes
