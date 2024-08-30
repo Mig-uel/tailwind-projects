@@ -1,31 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Typography</title>
-  </head>
-  <body>
+
+<head>
+  <link rel="stylesheet" href="../main.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Typography</title>
+</head>
+
+<body>
+  <div class="container mx-auto">
     <!-- Font Family -->
+    <div>
+      <h2 class="text-xl">Font Family</h2>
+      <div class="font-sans">font-sans</div>
+      <div class="font-serif">font-serif</div>
+      <div class="font-mono">font-mono</div>
+    </div>
 
     <!-- Font Size -->
+    <div>
+      <h2 class="text-xl mt-10">Font Size</h2>
+      <div>Font sizes for <i>xl</i> range from <i>xl</i> to <i>9xl</i></div>
+      <div class="text-xs"><i>text-xs</i></div>
+      <div class="text-sm"><i>text-sm</i></div>
+      <div class="text-base"><i>text-base</i></div>
+      <div class="text-lg"><i>text-lg</i></div>
+      <div class="text-xl"><i>text-xl</i></div>
+      <div class="text-2xl"><i>text-2xl</i></div>
+      <div class="text-3xl"><i>text-3xl</i></div>
+      <div class="text-4xl"><i>text-4xl</i></div>
+    </div>
 
     <!-- Font Weight -->
+    <div>
+      <h2 class="text-xl mt-10">Font Weight</h2>
+      <div class="font-light">font-light</div>
+      <div class="font-normal">font-normal</div>
+      <div class="font-medium">font-medium</div>
+      <div class="font-semibold">font-semibold</div>
+      <div class="font-bold">font-bold</div>
+    </div>
 
     <!-- Letter Spacing -->
+    <div>
+      <h2 class="text-xl mt-10">Letter Spacing</h2>
+      <div class="tracking-tighter">tracking-tighter <i>(letter-spacing: -0.05em;)</i></div>
+      <div class="tracking-tight">tracking-tight <i>(letter-spacing: -0.025em;)</i></div>
+      <div class="tracking-normal">tracking-normal <i>(letter-spacing: 0em;)</i></div>
+      <div class="tracking-wide">tracking-wide <i>( letter-spacing: 0.025em;)</i></div>
+      <div class="tracking-wider">tracking-wider <i>(letter-spacing: 0.05em;)</i></div>
+      <div class="tracking-widest">tracking-widest <i>(letter-spacing: 0.1em;)</i></div>
+    </div>
 
     <!-- Text Alignment -->
+    <div>
+      <h2 class="text-xl mt-10">Text Alignment</h2>
+      <div class="text-left"><i>text-left</i></div>
+      <div class="text-center"><i>text-center</i></div>
+      <div class="text-right"><i>text-right</i></div>
+    </div>
 
     <!-- Text Decoration -->
+    <div>
+      <h2 class="text-xl mt-10">Text Decoration</h2>
+      <!-- Decoration Style -->
+      <div class="underline decoration-4 decoration-blue-400"><i>underline decoration-4 decoration-blue-400</i></div>
+      <div class="underline decoration-double"><i>underline decoration-double</i></div>
+      <div class="underline decoration-dotted"><i>underline decoration-dotted</i></div>
+      <div class="underline decoration-dashed"><i>underline decoration-dashed</i></div>
+      <div class="underline decoration-wavy"><i>underline decoration-wavy</i></div>
 
-    <!-- Decoration Style -->
+      <!-- Decoration Offset -->
+      <div class="underline decoration-4 decoration-blue-400 underline-offset-4"><i>underline decoration-4
+          decoration-blue-400 underline-offset-4</i></div>
+    </div>
 
-    <!-- Decoration Offset -->
+
 
     <!-- Text Transform -->
-  </body>
+    <div>
+      <h2 class="text-xl mt-10">Text Transform</h2>
+      <div class="normal-case"><i>normal-case</i></div>
+      <div class="uppercase"><i>uppercase</i></div>
+      <div class="lowercase"><i>lowercase</i></div>
+      <div class="capitalize"><i>capitalize</i></div>
+    </div>
+  </div>
+</body>
+
 </html>
 
 <!-- Font Family
