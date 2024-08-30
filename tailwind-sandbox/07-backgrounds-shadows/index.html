@@ -1,21 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Backgrounds & Shadows</title>
-  </head>
-  <body>
-    <!-- Background Classes -->
 
-    <!-- Gradients -->
+<head>
+  <link rel="stylesheet" href="../main.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Backgrounds & Shadows</title>
+</head>
 
-    <!-- Shadows -->
+<body>
+  <!-- Background Classes -->
+  <div>
+    <h2 class="text-xl">Background Classes</h2>
+    <div class="h-64 w-72 bg-no-repeat bg-cover bg-center text-white"
+      style="background-image: url('../assets/img/img1.jpg');">
+      <i>bg-no-repeat bg-cover bg-center</i>
+    </div>
+  </div>
 
-    <!-- Mix Blend -->
-  </body>
+  <!-- Gradients -->
+  <div>
+    <h2 class="text-xl mt-10">Gradients</h2>
+    <div class="h-24 bg-gradient-to-r from-cyan-500 to-blue-500 text-white">
+      <i>bg-gradient-to-r from-cyan-500 to-blue-500</i>
+    </div>
+    <div class="h-24 bg-gradient-to-l from-cyan-500 to-blue-500 text-white">
+      <i>bg-gradient-to-l from-cyan-500 to-blue-500</i>
+    </div>
+  </div>
+
+  <!-- Shadows -->
+  <div>
+    <h2 class="text-xl mt-10">Shadows</h2>
+    <div class="w-96 mt-6 ml-4 p-3 shadow">
+      <i>shadow</i>
+    </div>
+    <div class="w-96 mt-6 ml-4 p-3 shadow-md">
+      <i>shadow-md</i>
+    </div>
+    <div class="w-96 mt-6 ml-4 p-3 shadow-lg">
+      <i>shadow-lg</i>
+    </div>
+    <div class="w-96 mt-6 ml-4 p-3 shadow-xl">
+      <i>shadow-xl</i>
+    </div>
+    <div class="w-96 mt-6 ml-4 p-3 shadow-2xl">
+      <i>shadow-2xl</i>
+    </div>
+    <div class="w-96 mt-6 ml-4 p-3 shadow-2xl shadow-inner">
+      <i>shadow-2xl shadow-inner</i>
+    </div>
+    <div class="w-96 mt-6 ml-4 p-3 shadow-2xl shadow-blue-500/50">
+      <i>shadow-2xl shadow-blue-500/50</i>
+    </div>
+    <div class="w-96 my-6 ml-4 p-3 shadow-2xl shadow-red-500">
+      <i>shadow-2xl</i>
+    </div>
+  </div>
+
+  <!-- Mix Blend -->
+  <div>
+    <h1 class="text-xl mt-10">Mix Blend</h1>
+    <i>mix-blend-multiply</i>
+    <div class="flex justify-center -space-x-24">
+      <div class="bg-blue-400 mix-blend-multiply">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis,
+        aliquam dolore.
+        Ducimus explicabo consequuntur quae quasi adipisci tempore impedit fugiat?
+      </div>
+      <div class="bg-pink-400 mix-blend-multiply">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam modi
+        sit velit atque
+        earum nemo adipisci consectetur quia non totam?
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
 
 <!-- Background Size
