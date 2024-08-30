@@ -1,17 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Columns</title>
-  </head>
-  <body>
+
+<head>
+  <link rel="stylesheet" href="../main.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Columns</title>
+</head>
+
+<body class="bg-slate-50 sm:bg-green-800 md:bg-blue-800 lg:bg-yellow-800 xl:bg-indigo-500 2xl:bg-red-500">
+  <div class="container mx-auto my-3 p-10 rounded-2xl shadow bg-white">
+    <h1 class="text-slate-500">Tailwind CSS from Scratch: Columns</h1>
+
     <!-- Columns -->
+    <div class="mt-4">
+      <h2 class="text-xl font-medium">Columns</h2>
+      <div class="columns-4 gap-0">
+        <img class="w-full" src="../assets/img/img1.jpg" alt="">
+        <img class="w-full" src="../assets/img/img2.jpg" alt="">
+        <img class="w-full" src="../assets/img/img3.jpg" alt="">
+        <img class="w-full" src="../assets/img/img4.jpg" alt="">
+      </div>
+      <i>columns-4 gap-0</i>
+
+      <div class="columns-xs">
+        <img class="w-full" src="../assets/img/img1.jpg" alt="">
+        <img class="w-full" src="../assets/img/img2.jpg" alt="">
+        <img class="w-full" src="../assets/img/img3.jpg" alt="">
+        <img class="w-full" src="../assets/img/img4.jpg" alt="">
+      </div>
+      <i>columns-xs</i>
+    </div>
 
     <!-- Aspect Ratio -->
-  </body>
+    <div class="mt-4">
+      <h2 class="text-xl font-medium">Aspect Ratio</h2>
+      <div class="columns-4">
+        <img class="w-full aspect-video" src="../assets/img/img1.jpg" alt="">
+        <i>aspect-video</i>
+        <img class="w-full aspect-square" src="../assets/img/img2.jpg" alt="">
+        <i><-- aspect-square</i>
+            <img class="w-full" src="../assets/img/img3.jpg" alt="">
+            <img class="w-full" src="../assets/img/img4.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
 
 <!-- Column Classes
