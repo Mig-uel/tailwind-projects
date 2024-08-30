@@ -1,34 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Interactivity</title>
-  </head>
-  <body>
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Interactivity</title>
+</head>
+
+<body class="bg-slate-50">
+  <div class="container mx-auto my-3 p-10 rounded-2xl shadow bg-white">
+    <h1 class="text-slate-500">Tailwind CSS from Scratch: Filters</h1>
+
+    <a href="#user-select" class="block my-6">User Select</a>
+
     <!-- Hover State Styling -->
+    <div class="mt-4">
+      <h2 class="text-xl font-medium">Hover State Styling</h2>
+      <div>
+        <button class="bg-black text-white py-3 px-5 rounded-lg hover:bg-orange-500 hover:text-yellow-300">
+          <i>hover:bg-orange-500 hover:text-yellow-300</i>
+        </button>
+      </div>
+    </div>
+
 
     <!-- Focus State Styling -->
+    <div class="mt-4">
+      <h2 class="text-xl font-medium">Focus State Styling</h2>
+      <div>
+        <button class="bg-black text-white py-3 px-5 rounded-lg focus:bg-green-500 focus:text-indigo-800">
+          <i>focus:bg-green-500 focus:text-indigo-800</i>
+        </button>
+      </div>
+    </div>
 
     <!-- Active State Styling -->
+    <div class="mt-4">
+      <h2 class="text-xl font-medium">Active State Styling</h2>
+      <div>
+        <button class="bg-black text-white py-3 px-5 rounded-lg active:bg-yellow-500 active:text-indigo-800">
+          <i>active:bg-yellow-500 active:text-indigo-800</i>
+        </button>
+      </div>
+    </div>
 
     <!-- Styling based on parent state -->
+    <div class="mt-4">
+      <h2 class="text-xl font-medium">Styling Based on Parent State</h2>
+      <a class="group block max-w-xs mx-auto rounded-lg p-6 bg-white shadow-lg space-y-3 hover:bg-sky-500">
+        <i>group hover:bg-sky-500</i>
+        <h3 class="group-hover:text-white"><i>group-hover:text-white</i></h3>
+        <p class="group-hover:text-white"><i>group-hover:text-white</i></p>
+      </a>
+    </div>
 
     <!-- Pseudo Classes -->
+    <div class="mt-4">
+      <h2 class="text-xl font-medium">Pseudo Classes</h2>
+      <div>
+        <ul>
+          <li class="first:bg-indigo-200 even:bg-green-500 odd:text-red-500"><i>first:bg-red-200 even:bg-green-500
+              odd:text-red-500</i></li>
+          <li class="first:bg-red-200 even:bg-green-500 odd:text-red-500"><i>first:bg-red-200 even:bg-green-500
+              odd:text-red-500</i></li>
+          <li class="first:bg-red-200 even:bg-green-500 odd:text-red-500"><i>first:bg-red-200 even:bg-green-500
+              odd:text-red-500</i></li>
+          <li class="first:bg-red-200 even:bg-green-500 odd:text-red-500"><i>first:bg-red-200 even:bg-green-500
+              odd:text-red-500</i></li>
+          <li class="first:bg-red-200 even:bg-green-500 odd:text-red-500"><i>first:bg-red-200 even:bg-green-500
+              odd:text-red-500</i></li>
+          <li class="first:bg-red-200 even:bg-green-500 odd:text-red-500"><i>first:bg-red-200 even:bg-green-500
+              odd:text-red-500</i></li>
+        </ul>
+      </div>
+    </div>
 
     <!-- Appearance -->
     <!-- Use appearance-none to reset any browser specific styling on an element. This utility is often used when creating custom form components. -->
+    <div class="mt-4">
+      <h2 class="text-xl font-medium">Appearance</h2>
+      <div>
+        <label class="block"><i>appearance-none</i></label>
+        <select class="appearance-none border">
+          <option value="yes">yes</option>
+          <option value="no">no</option>
+        </select>
+      </div>
+    </div>
+
 
     <!-- Cursor -->
+    <div class="mt-4">
+      <h2 class="text-xl font-medium">Cursor</h2>
+      <div>
+        <button class="bg-black text-white py-3 px-5 rounded-lg m-3 cursor-wait">
+          <i>cursor-wait</i>
+        </button>
+        <button class="bg-black text-white py-3 px-5 rounded-lg m-3 cursor-not-allowed">
+          <i>cursor-not-allowed</i>
+        </button>
+        <button class="bg-black text-white py-3 px-5 rounded-lg m-3 cursor-crosshair">
+          <i>cursor-crosshair</i>
+        </button>
+        <p class="cursor-pointer"><i>cursor-pointer</i></p>
+      </div>
+    </div>
 
     <!-- Resize -->
 
     <!-- User Select -->
+    <div class="mt-4" id="user-select">
+      <h2 class="text-xl font-medium">User Select</h2>
+      <div class="select-none">
+        <i>select-none</i>
+      </div>
+      <div class="select-text">
+        <i>select-text</i>
+      </div>
+      <div class="select-all">
+        <i>select-all</i>
+      </div>
+      <div class="select-auto">
+        <i>select-auto</i>
+      </div>
+    </div>
 
     <!-- Smooth Scroll Example -->
-  </body>
+    <div class="mt-4">
+      <h2 class="text-xl font-medium">Smooth Scroll</h2>
+      <div>
+        <i>scroll-smooth</i>
+      </div>
+    </div>
+
+  </div>
+</body>
+
 </html>
 
 <!-- Cursor
