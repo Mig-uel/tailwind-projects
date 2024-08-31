@@ -1,19 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Flex</title>
-  </head>
-  <body>
+
+<head>
+  <link rel="stylesheet" href="../main.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Flex</title>
+</head>
+
+<body class="bg-slate-50 sm:bg-green-800 md:bg-blue-800 lg:bg-yellow-800 xl:bg-indigo-500 2xl:bg-red-500">
+  <div class="container mx-auto my-3 p-10 rounded-2xl shadow bg-white">
+    <h1 class="text-slate-500">Tailwind CSS from Scratch: Flexbox</h1>
+
     <!-- Flex and alignment -->
+    <div class="mt-4">
+      <h2 class="text-xl font-medium">Flex and Alignment</h2>
+
+      <i>flex-col md:flex-row items-stretch</i>
+      <div class="flex flex-col md:flex-row items-stretch h-72 w-full bg-gray-100">
+        <div class="p-10 border border-indigo-500 bg-indigo-300">
+          1
+        </div>
+        <div class="p-10 border border-indigo-500 bg-indigo-300">
+          2
+        </div>
+        <div class="p-10 border border-indigo-500 bg-indigo-300">
+          3
+        </div>
+        <div class="p-10 border border-indigo-500 bg-indigo-300">
+          4
+        </div>
+      </div>
+
+      <i class="mt-4 block">flex-col md:flex-row items-start</i>
+      <div class="flex flex-col md:flex-row items-start h-72 w-full bg-gray-100">
+        <div class="p-10 border border-indigo-500 bg-indigo-300">
+          1
+        </div>
+        <div class="p-10 border border-indigo-500 bg-indigo-300">
+          2
+        </div>
+        <div class="p-10 border border-indigo-500 bg-indigo-300">
+          3
+        </div>
+        <div class="p-10 border border-indigo-500 bg-indigo-300">
+          4
+        </div>
+      </div>
+
+      <i class="mt-4 block">flex-col md:flex-row items-center justify-center</i>
+      <div class="flex flex-col md:flex-row items-center justify-center h-72 w-full bg-gray-100">
+        <div class="p-10 border border-indigo-500 bg-indigo-300">
+          1
+        </div>
+        <div class="p-10 border border-indigo-500 bg-indigo-300">
+          2
+        </div>
+        <div class="p-10 border border-indigo-500 bg-indigo-300">
+          3
+        </div>
+        <div class="p-10 border border-indigo-500 bg-indigo-300">
+          4
+        </div>
+      </div>
+
+      <i class="mt-4 block">flex-col md:flex-row items-center justify-between flex-wrap</i>
+      <div class="flex flex-col md:flex-row items-center justify-between flex-wrap h-72 w-full bg-gray-100">
+        <div class="p-10 border border-indigo-500 bg-indigo-300">
+          1
+        </div>
+        <div class="p-10 border border-indigo-500 bg-indigo-300">
+          2
+        </div>
+        <div class="p-10 border border-indigo-500 bg-indigo-300">
+          3
+        </div>
+        <div class="p-10 border border-indigo-500 bg-indigo-300">
+          4
+        </div>
+        <div class="p-10 border border-indigo-500 bg-indigo-300">
+          5
+        </div>
+        <div class="p-10 border border-indigo-500 bg-indigo-300">
+          6
+        </div>
+        <div class="p-10 border border-indigo-500 bg-indigo-300">
+          7
+        </div>
+        <div class="p-10 border border-indigo-500 bg-indigo-300">
+          8
+        </div>
+        <div class="p-10 border border-indigo-500 bg-indigo-300">
+          9
+        </div>
+        <div class="p-10 border border-indigo-500 bg-indigo-300">
+          10
+        </div>
+        <div class="p-10 border border-indigo-500 bg-indigo-300">
+          11
+        </div>
+      </div>
+    </div>
 
     <!-- Flex Column, Gap and Order -->
+    <div class="mt-4">
+      <h2 class="text-xl font-medium"> Flex Column, Gap and Order</h2>
+
+      <i>flex-col items-center justify-between gap-4</i>
+      <div class="flex flex-col items-center justify-between gap-4 flex-wrap h-72 w-full bg-gray-100">
+        <div class="order-3 p-10 border border-blue-300 bg-blue-100">1 <i>order-1</i></div>
+        <div class="order-2 p-10 border border-blue-300 bg-blue-100">2 <i>order-2</i></div>
+        <div class="order-4 p-10 border border-blue-300 bg-blue-100">3 <i>order-4</i></div>
+        <div class="order-1 p-10 border border-blue-300 bg-blue-100">4 <i>order-1</i></div>
+      </div>
+    </div>
 
     <!-- Grow and shrink -->
-  </body>
+    <div class="mt-4">
+      <h2 class="text-xl font-medium"> Grow and shrink</h2>
+
+      <i>flex</i>
+      <div class="flex w-full bg-gray-100">
+        <div class="flex-initial w-64 p-10 border border-blue-300 bg-blue-100"><i>flex-initial</i></div>
+        <div class="flex-none w-64 p-10 border border-blue-300 bg-blue-100"><i>flex-none</i></div>
+        <div class="flex-auto w-64 p-10 border border-blue-300 bg-blue-100"><i>flex-auto</i></div>
+        <div class="flex-1 w-64 p-10 border border-blue-300 bg-blue-100"><i>flex-1</i></div>
+        <div class="p-10 border border-blue-300 bg-blue-100"><i></i></div>
+        <div class="p-10 border border-blue-300 bg-blue-100">6</div>
+        <div class="p-10 border border-blue-300 bg-blue-100">7</div>
+      </div>
+      <div class="flex text-center w-full bg-gray-100">
+        <div class="flex-1 w-64 p-10 border border-blue-300 bg-blue-100"><i>flex-1</i></div>
+        <div class="flex-1 w-64 p-10 border border-blue-300 bg-blue-100"><i>flex-1</i></div>
+        <div class="flex-1 w-64 p-10 border border-blue-300 bg-blue-100"><i>flex-1</i></div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
 </html>
 
 <!-- Justify Content
