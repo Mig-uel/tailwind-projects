@@ -1,17 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Grid</title>
-  </head>
-  <body>
+
+<head>
+  <link rel="stylesheet" href="../main.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Grid</title>
+</head>
+
+<body class="bg-slate-50 sm:bg-green-800 md:bg-blue-800 lg:bg-yellow-800 xl:bg-indigo-500 2xl:bg-red-500">
+  <div class="container mx-auto my-3 p-10 rounded-2xl shadow bg-white">
+    <h1 class="text-slate-500">Tailwind CSS from Scratch: Flexbox</h1>
+
     <!-- Grid cols and rows -->
+    <div class="mt-4">
+      <h2 class="text-xl font-medium">Grid Cols and Rows</h2>
+
+      <i>grid grid-cols-3 gap-4 grid-rows-6</i>
+      <div class="grid grid-cols-3 gap-4 grid-rows-6 bg-gray-100">
+        <div class="p-10 border border-blue-600 bg-blue-100">Item 1</div>
+        <div class="p-10 border border-blue-600 bg-blue-100">Item 2</div>
+        <div class="p-10 border border-blue-600 bg-blue-100">Item 3</div>
+        <div class="p-10 border border-blue-600 bg-blue-100">Item 4</div>
+        <div class="p-10 border border-blue-600 bg-blue-100">Item 5</div>
+        <div class="p-10 border border-blue-600 bg-blue-100">Item 6</div>
+        <div class="p-10 border border-blue-600 bg-blue-100">Item 7</div>
+        <div class="p-10 border border-blue-600 bg-blue-100">Item 8</div>
+        <div class="p-10 border border-blue-600 bg-blue-100">Item 9</div>
+      </div>
+    </div>
 
     <!-- Col and row span -->
-  </body>
+    <div class="mt-4">
+      <h2 class="text-xl font-medium">Col and Row Span</h2>
+
+      <i>grid grid-cols-1 md:grid-cols-3</i>
+      <div class="grid grid-cols-1 md:grid-cols-3">
+        <div class="md:col-span-2 md:row-span-2 p-10 border border-blue-600 bg-blue-100"><i>md:col-span-2
+            md:row-span-2</i>
+        </div>
+        <div class="p-10 border border-blue-600 bg-blue-100">Item 2</div>
+        <div class="p-10 border border-blue-600 bg-blue-100">Item 3</div>
+        <div class="p-10 border border-blue-600 bg-blue-100">Item 4</div>
+        <div class="p-10 border border-blue-600 bg-blue-100">Item 5</div>
+        <div class="p-10 border border-blue-600 bg-blue-100">Item 6</div>
+        <div class="md:col-span-2 p-10 border border-blue-600 bg-blue-100"><i>md:col-span-2</i></div>
+        <div class="p-10 border border-blue-600 bg-blue-100">Item 8</div>
+        <div class="md:col-span-3 p-10 border border-blue-600 bg-blue-100"><i>md:col-span-3</i></div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
 </html>
 
 <!-- 
